@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Challenge | Finding Falcone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" />
+</head>
+
+<body>
+        <div class="container">
+      <div class="page-header">
+          <div class="row"> 
+               <h3 style="text-align:center">Finding Falcone</h3>
+        </div>
+      </div>
+      </div>
+    <div class="container"> 
+          <div class="well">
+        <div class="row"><br>
+            <h5 style="text-align:center"></h5>  
+            <fieldset style="text-align:center" id="reset">
+                <legend>Choose the planet where AI Falcone might be hiding in</legend>
+            <div class="col-md-3">
+                <select class="form-control" id='box1' name="n1">
+                        <option value="Disabled">Choose Planets</option>
+                </select>
+                <input type="text" id="name1" hidden>
+                <input type="text" id="value1" hidden>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id='box2' name="n2">
+                      <option value="Disabled">Choose Planets</option>
+                </select>
+                <input type="text" id="name2" hidden>
+                <input type="text" id="value2" hidden>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id='box3' name="n3">
+                      <option value="Disabled">Choose Planets</option>
+                </select>
+                <input type="text" id="name3" hidden>
+                <input type="text" id="value3" hidden>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id='box4' name="n4">
+                      <option value="Disabled">Choose Planets</option>
+                 </select>
+                <input type="text" id="name4" hidden>
+                <input type="text" id="value4" hidden>
+            </div>
+        </fieldset>
+        </div></div>
+        <div class="row" >
+            <div class="well">
+            <fieldset>
+                <legend style="text-align:center">Select the space vehicles<p id="time">Max time - <span id="totalTimeTaken"></span></p></legend>
+                <div id="result">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 id="planetName1"></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="timeTaken1"></h3>
+                    </div>
+                </div>
+                <div id="vehicleSelect1"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 id="planetName2"></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="timeTaken2"></h3>
+                    </div>
+                </div>
+                <div id="vehicleSelect2"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 id="planetName3"></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="timeTaken3"></h3>
+                    </div>
+                </div>
+                <div id="vehicleSelect3"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 id="planetName4"></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="timeTaken4"></h3>
+                    </div>
+                </div>
+                <div id="vehicleSelect4"></div>
+            </div>
+            </div>
+            </fieldset>
+            </div>
+        </div>
+        
+        <div class="row text-center">
+            <button id="submit" class="btn btn-primary">Find Falcone</button>
+            <button id="resetBtn" class="btn btn-link">Reset</button>
+        </div>
+        <div id="pop"></div>
+    </div>
+     <!-- success Modal --  data-toggle="modal" data-target="#myModal">
+ 
+     <!-- <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Hurray!!!</h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <script src="newjs.js"></script>
+</body>
+
+</html>
